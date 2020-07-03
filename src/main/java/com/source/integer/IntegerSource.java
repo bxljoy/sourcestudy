@@ -130,6 +130,9 @@ public class IntegerSource {
         int x = 0b000000001100;
         int y = 12;
         logger.info((x == y) + "");
+
+        String str = "asdf";
+
     }
 
 }

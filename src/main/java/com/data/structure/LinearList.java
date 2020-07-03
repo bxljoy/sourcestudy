@@ -27,10 +27,22 @@ public class LinearList {
         arrayLengh = data.length;
     }
 
+    /**
+     * 获取指定位置的元素
+     *
+     * @param index
+     * @return
+     */
     public String getElement(int index) {
         return index<0 || index>=data.length ? null : data[index];
     }
 
+    /**
+     * 获取给定元素的位置，若存在返回位置下标；不存在则返回0
+     *
+     * @param element
+     * @return
+     */
     public int locateElement(String element) {
         int position = 0;
         for (int i=0; i<data.length; i++) {

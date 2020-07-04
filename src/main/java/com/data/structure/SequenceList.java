@@ -4,7 +4,7 @@ package com.data.structure;
  * 顺序存储线性表（简单实现）
  *
  */
-public class LinearList {
+public class SequenceList {
     private final int DEFAULT_SIZE = 10;
     private String [] data = new String[DEFAULT_SIZE];
     private int listLength = 0;
@@ -118,7 +118,7 @@ public class LinearList {
     }
 
     public static void main(String[] args) {
-        LinearList linearList = new LinearList();
+        SequenceList linearList = new SequenceList();
         linearList.appendElement("a");
         linearList.appendElement("b");
         linearList.appendElement("c");
@@ -146,6 +146,8 @@ public class LinearList {
         System.out.println("listLength = " + linearList.listLength);
         System.out.println(linearList.toString());
         System.out.println(linearList.toLinearString());
+
+        System.out.println("查找指定元素：" + linearList.getElement(5));
 
     }
 
